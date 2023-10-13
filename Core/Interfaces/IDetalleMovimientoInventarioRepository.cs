@@ -6,7 +6,7 @@ using Core.Entities;
 
 namespace Core.Interfaces;
 
-public interface IDetalleMovimientoInventarioRepository : IGenericRepositoryVC<DetalleMovimientoInventario>
+public interface IDetalleMovimientoInventarioRepository : IGenericRepository<DetalleMovimientoInventario>
 {
 
 }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Core.Entities;
 
-public class DetalleMovimientoInventario : BaseEntityVC
+public class DetalleMovimientoInventario : BaseEntity
 {
     public int Cantidad { get; set; }
     public double Precio { get; set; }

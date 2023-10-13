@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories;
 
-public class DetalleMovimientoInventarioRepository : GenericRepositoryVC<DetalleMovimientoInventario>,IDetalleMovimientoInventarioRepository
+public class DetalleMovimientoInventarioRepository : GenericRepository<DetalleMovimientoInventario>,IDetalleMovimientoInventarioRepository
 {
     private readonly FarmaciaCampusContext _context;
 
