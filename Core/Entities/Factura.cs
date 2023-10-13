@@ -11,8 +11,8 @@ public class Factura : BaseEntity
     public int FacturaInicial { get; set; }
     public int FacturaFinal { get; set; }
     public string NumeroResolucion { get; set; }
-    public int IdPersonaFk { get; set; }
+    public string IdPersonaFk { get; set; }
     public Persona Personas { get; set; }
-    public int IdDetalleMovimientoInventarioFk { get; set; }
+    public string IdDetalleMovimientoInventarioFk { get; set; }
     public DetalleMovimientoInventario DetalleMovimientoInventarios { get; set; }
 }

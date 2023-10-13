@@ -9,9 +9,9 @@ public class DetalleMovimientoInventario : BaseEntityVC
 {
     public int Cantidad { get; set; }
     public double Precio { get; set; }
-    public int IdInventarioFk { get; set; }
+    public string IdInventarioFk { get; set; }
     public Inventario Inventarios { get; set; }
-    public int IdMovimientoInventarioFk { get; set; }
+    public string IdMovimientoInventarioFk { get; set; }
     public MovimientoInventario MovimientoInventarios { get; set; }
     public ICollection<Factura> Facturas { get; set; }
 }

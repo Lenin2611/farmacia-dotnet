@@ -9,8 +9,8 @@ public class MovimientoInventario : BaseEntityVC
 {
     public DateTime FechaMovimientoInventario { get; set; }
     public DateTime FechaVencimiento { get; set; }
-    public int IdPersonaResponsableFk { get; set; }
-    public int IdPersonaReceptorFk { get; set; }
+    public string IdPersonaResponsableFk { get; set; }
+    public string IdPersonaReceptorFk { get; set; }
     public Persona Personas { get; set; }
     public int IdTipoMovimientoInventarioFk { get; set; }
     public TipoMovimientoInventario TipoMovimientoInventarios { get; set; }

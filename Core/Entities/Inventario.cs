@@ -12,7 +12,7 @@ public class Inventario : BaseEntityVC
     public int StockActual { get; set; }
     public int StockMinimo { get; set; }
     public int StockMaximo { get; set; }
-    public int IdProductoFk { get; set; }
+    public string IdProductoFk { get; set; }
     public Producto Productos { get; set; }
     public int IdPresentacionFk { get; set; }
     public Presentacion Presentaciones { get; set; }
