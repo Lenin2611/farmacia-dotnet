@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace Core.Entities;
 
-public class Producto
+public class Producto : BaseEntityVC
 {
-    public string Id { get; set; }
     public string NombreProducto { get; set; }
     public int IdMarcaFk { get; set; }
     public Marca Marcas { get; set; }

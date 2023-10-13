@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace Core.Entities;
 
-public class Persona
+public class Persona : BaseEntityVC
 {
-    public string Id { get; set; }
     public string NombrePersona { get; set; }
     public DateTime FechaRegistroPersona { get; set; }
     public int IdRolPersonaFk { get; set; }

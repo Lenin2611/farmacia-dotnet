@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace Core.Entities;
 
-public class Inventario
+public class Inventario : BaseEntityVC
 {
-    public string Id { get; set; }
     public string NombreInventario { get; set; }
     public double PrecioInventario { get; set; }
     public int StockActual { get; set; }

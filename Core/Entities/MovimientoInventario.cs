@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace Core.Entities;
 
-public class MovimientoInventario
+public class MovimientoInventario : BaseEntityVC
 {
-    public string Id { get; set; }
     public DateTime FechaMovimientoInventario { get; set; }
     public DateTime FechaVencimiento { get; set; }
     public int IdPersonaResponsableFk { get; set; }
