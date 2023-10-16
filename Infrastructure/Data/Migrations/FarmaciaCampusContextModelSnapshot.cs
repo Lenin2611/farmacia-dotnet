@@ -220,10 +220,10 @@ namespace Infrastructure.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
-                    b.Property<DateTime>("FechaMovimientoInventario")
+                    b.Property<DateOnly>("FechaMovimientoInventario")
                         .HasColumnType("date");
 
-                    b.Property<DateTime>("FechaVencimiento")
+                    b.Property<DateOnly>("FechaVencimiento")
                         .HasColumnType("date");
 
                     b.Property<int>("IdFormaPagoFk")
@@ -271,7 +271,7 @@ namespace Infrastructure.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
-                    b.Property<DateTime>("FechaRegistroPersona")
+                    b.Property<DateOnly>("FechaRegistroPersona")
                         .HasColumnType("date");
 
                     b.Property<int>("IdRolPersonaFk")

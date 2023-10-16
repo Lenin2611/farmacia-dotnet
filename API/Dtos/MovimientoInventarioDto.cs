@@ -8,8 +8,8 @@ namespace API.Dtos;
 public class MovimientoInventarioDto
 {
     public string Id { get; set; }
-    public DateTime FechaMovimientoInventario { get; set; }
-    public DateTime FechaVencimiento { get; set; }
+    public DateOnly FechaMovimientoInventario { get; set; }
+    public DateOnly FechaVencimiento { get; set; }
     public string IdPersonaResponsableFk { get; set; }
     public string IdPersonaReceptorFk { get; set; }
     public int IdTipoMovimientoInventarioFk { get; set; }

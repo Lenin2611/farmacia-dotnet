@@ -8,7 +8,7 @@ namespace Core.Entities;
 public class Persona : BaseEntityVC
 {
     public string NombrePersona { get; set; }
-    public DateTime FechaRegistroPersona { get; set; }
+    public DateOnly FechaRegistroPersona { get; set; }
     public int IdRolPersonaFk { get; set; }
     public RolPersona RolPersonas { get; set; }
     public int IdTipoDocumentoFk { get; set; }

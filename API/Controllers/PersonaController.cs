@@ -50,6 +50,11 @@ public class PersonaController : BaseController
     public async Task<ActionResult<PersonaDto>> Post(PersonaDto resultDto)
     {
         var result = _mapper.Map<Persona>(resultDto);
+        if (resultDto.FechaRegistroPersona == DateOnly.MinValue)
+        {
+            resultDto.FechaRegistroPersona = DateOnly.FromDateTime(DateTime.Now);
+            result.FechaRegistroPersona = DateOnly.FromDateTime(DateTime.Now);
+        }
         _unitOfWork.Personas.Add(result);
         await _unitOfWork.SaveAsync();
         if (result == null)
@@ -75,6 +80,11 @@ public class PersonaController : BaseController
             return NotFound();
         }
         var result = _mapper.Map<Persona>(resultDto);
+        if (resultDto.FechaRegistroPersona == DateOnly.MinValue)
+        {
+            resultDto.FechaRegistroPersona = DateOnly.FromDateTime(DateTime.Now);
+            result.FechaRegistroPersona = DateOnly.FromDateTime(DateTime.Now);
+        }
         resultDto.Id = result.Id;
         _unitOfWork.Personas.Update(result);
         await _unitOfWork.SaveAsync();

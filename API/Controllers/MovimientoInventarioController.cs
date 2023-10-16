@@ -50,6 +50,16 @@ public class MovimientoInventarioController : BaseController
     public async Task<ActionResult<MovimientoInventarioDto>> Post(MovimientoInventarioDto resultDto)
     {
         var result = _mapper.Map<MovimientoInventario>(resultDto);
+        if (resultDto.FechaMovimientoInventario == DateOnly.MinValue)
+        {
+            resultDto.FechaMovimientoInventario = DateOnly.FromDateTime(DateTime.Now);
+            result.FechaMovimientoInventario = DateOnly.FromDateTime(DateTime.Now);
+        }
+        if (resultDto.FechaVencimiento == DateOnly.MinValue)
+        {
+            resultDto.FechaVencimiento = DateOnly.FromDateTime(DateTime.Now);
+            result.FechaVencimiento = DateOnly.FromDateTime(DateTime.Now);
+        }
         _unitOfWork.MovimientoInventarios.Add(result);
         await _unitOfWork.SaveAsync();
         if (result == null)
@@ -74,7 +84,18 @@ public class MovimientoInventarioController : BaseController
         {
             return NotFound();
         }
+        
         var result = _mapper.Map<MovimientoInventario>(resultDto);
+        if (resultDto.FechaMovimientoInventario == DateOnly.MinValue)
+        {
+            resultDto.FechaMovimientoInventario = DateOnly.FromDateTime(DateTime.Now);
+            result.FechaMovimientoInventario = DateOnly.FromDateTime(DateTime.Now);
+        }
+        if (resultDto.FechaVencimiento == DateOnly.MinValue)
+        {
+            resultDto.FechaVencimiento = DateOnly.FromDateTime(DateTime.Now);
+            result.FechaVencimiento = DateOnly.FromDateTime(DateTime.Now);
+        }
         resultDto.Id = result.Id;
         _unitOfWork.MovimientoInventarios.Update(result);
         await _unitOfWork.SaveAsync();

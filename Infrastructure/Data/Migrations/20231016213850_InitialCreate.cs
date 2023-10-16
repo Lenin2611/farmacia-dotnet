@@ -202,7 +202,7 @@ namespace Infrastructure.Data.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     NombrePersona = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    FechaRegistroPersona = table.Column<DateTime>(type: "date", nullable: false),
+                    FechaRegistroPersona = table.Column<DateOnly>(type: "date", nullable: false),
                     IdRolPersonaFk = table.Column<int>(type: "int", nullable: false),
                     IdTipoDocumentoFk = table.Column<int>(type: "int", nullable: false),
                     IdTipoPersonaFk = table.Column<int>(type: "int", nullable: false)
@@ -319,8 +319,8 @@ namespace Infrastructure.Data.Migrations
                 {
                     Id = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    FechaMovimientoInventario = table.Column<DateTime>(type: "date", nullable: false),
-                    FechaVencimiento = table.Column<DateTime>(type: "date", nullable: false),
+                    FechaMovimientoInventario = table.Column<DateOnly>(type: "date", nullable: false),
+                    FechaVencimiento = table.Column<DateOnly>(type: "date", nullable: false),
                     IdPersonaResponsableFk = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     IdPersonaReceptorFk = table.Column<string>(type: "varchar(50)", nullable: true)
