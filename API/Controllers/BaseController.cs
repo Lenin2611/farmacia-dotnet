@@ -8,7 +8,7 @@ namespace API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class BaseEntity : ControllerBase
+public class BaseController : ControllerBase
 {
 
 }
