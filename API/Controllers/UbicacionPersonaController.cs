@@ -60,7 +60,7 @@ public class UbicacionPersonaController : BaseController
         return CreatedAtAction(nameof(Post), new { id = resultDto.Id }, resultDto);
     }
 
-    [HttpPut]
+    [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -81,8 +81,8 @@ public class UbicacionPersonaController : BaseController
         return resultDto;
     }
 
-    [HttpDelete]
-    [ProducesResponseType(StatusCodes.Status200OK)]
+    [HttpDelete("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Delete(int id)
     {

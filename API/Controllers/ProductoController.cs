@@ -60,13 +60,13 @@ public class ProductoController : BaseController
         return CreatedAtAction(nameof(Post), new { id = resultDto.Id }, resultDto);
     }
 
-    [HttpPut]
+    [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<ProductoDto>> Put(string id, [FromBody] ProductoDto resultDto)
     {
-        if (resultDto.Id == string.Empty)
+        if (resultDto.Id == null)
         {
             resultDto.Id = id;
         }
@@ -81,7 +81,7 @@ public class ProductoController : BaseController
         return resultDto;
     }
 
-    [HttpDelete]
+    [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Delete(string id)

@@ -60,13 +60,13 @@ public class PersonaController : BaseController
         return CreatedAtAction(nameof(Post), new { id = resultDto.Id }, resultDto);
     }
 
-    [HttpPut]
+    [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<PersonaDto>> Put(string id, [FromBody] PersonaDto resultDto)
     {
-        if (resultDto.Id == string.Empty)
+        if (resultDto.Id == null)
         {
             resultDto.Id = id;
         }
@@ -81,7 +81,7 @@ public class PersonaController : BaseController
         return resultDto;
     }
 
-    [HttpDelete]
+    [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Delete(string id)

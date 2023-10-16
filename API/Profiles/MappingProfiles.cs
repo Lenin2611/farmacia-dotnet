@@ -10,7 +10,7 @@ namespace API.Profiles;
 
 public class MappingProfiles : Profile
 {
-    protected MappingProfiles()
+    public MappingProfiles()
     {
         CreateMap<Ciudad,CiudadDto>().ReverseMap();
 
