@@ -1,3 +1,6 @@
+using System.Reflection;
+using API.Extensions;
+using AspNetCoreRateLimit;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +16,14 @@ builder.Services.AddDbContext<FarmaciaCampusContext>(optionsBuilder =>
     optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 
+builder.Services.ConfigureCors();
+
+builder.Services.ConfigureRateLimiting();
+
+builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
+
+builder.Services.AddApplicationServices();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
@@ -26,6 +37,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("CorsPolicy");
+
+app.UseIpRateLimiting();
 
 app.UseHttpsRedirection();
 
