@@ -14,8 +14,8 @@ public class DetalleMovimientoInventarioConfiguration : IEntityTypeConfiguration
     {
         builder.ToTable("detallemovimiento");
 
-        builder.HasKey(c => new {c.IdInventarioFk, c.IdMovimientoInventarioFk});
-        builder.Property(c => new {c.IdInventarioFk, c.IdMovimientoInventarioFk});
+        builder.HasKey(c => c.Id);
+        builder.Property(c => c.Id);
 
         builder.Property(x => x.Cantidad).HasColumnType("int");
 
