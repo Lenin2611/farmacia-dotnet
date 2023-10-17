@@ -19,6 +19,7 @@ public class DepartamentoConfiguration : IEntityTypeConfiguration<Departamento>
 
         builder.Property(x => x.NombreDepartamento).IsRequired().HasMaxLength(50);
 
+        builder.Property(x => x.IdPaisFk).HasColumnType("int");
         builder.HasOne(x => x.Paises).WithMany(x => x.Departamentos).HasForeignKey(x => x.IdPaisFk);
     }
 }

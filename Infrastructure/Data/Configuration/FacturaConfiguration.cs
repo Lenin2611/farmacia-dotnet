@@ -25,7 +25,10 @@ public class FacturaConfiguration : IEntityTypeConfiguration<Factura>
     
         builder.Property(x => x.NumeroResolucion).IsRequired().HasMaxLength(50);
     
+        builder.Property(x => x.IdPersonaFk).HasMaxLength(50);
         builder.HasOne(x => x.Personas).WithMany(x => x.Facturas).HasForeignKey(x => x.IdPersonaFk);
+
+        builder.Property(x => x.IdDetalleMovimientoInventarioFk).HasColumnType("int");
         builder.HasOne(x => x.DetalleMovimientoInventarios).WithMany(x => x.Facturas).HasForeignKey(x => x.IdDetalleMovimientoInventarioFk);
     }
 }

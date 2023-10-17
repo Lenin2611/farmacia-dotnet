@@ -21,8 +21,13 @@ public class PersonaConfiguration : IEntityTypeConfiguration<Persona>
 
         builder.Property(x => x.FechaRegistroPersona).HasColumnType("date");
 
+        builder.Property(x => x.IdRolPersonaFk).HasColumnType("int");
         builder.HasOne(x => x.RolPersonas).WithMany(r => r.Personas).HasForeignKey(x => x.IdRolPersonaFk);
+
+        builder.Property(x => x.IdTipoDocumentoFk).HasColumnType("int");
         builder.HasOne(x => x.TipoDocumentos).WithMany(r => r.Personas).HasForeignKey(x => x.IdTipoDocumentoFk);
+
+        builder.Property(x => x.IdTipoPersonaFk).HasColumnType("int");
         builder.HasOne(x => x.TipoPersonas).WithMany(r => r.Personas).HasForeignKey(x => x.IdTipoPersonaFk);
     }
 }

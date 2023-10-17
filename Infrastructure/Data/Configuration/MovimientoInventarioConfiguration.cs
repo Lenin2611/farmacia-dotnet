@@ -21,9 +21,16 @@ public class MovimientoInventarioConfiguration : IEntityTypeConfiguration<Movimi
 
         builder.Property(x => x.FechaVencimiento).HasColumnType("date");
 
+        builder.Property(x => x.IdPersonaResponsableFk).HasMaxLength(50);
         builder.HasOne(x => x.Personas).WithMany(p => p.MovimientoInventarios).HasForeignKey(x => x.IdPersonaResponsableFk);
+        
+        builder.Property(x => x.IdPersonaReceptorFk).HasMaxLength(50);
         builder.HasOne(x => x.Personas).WithMany(p => p.MovimientoInventarios).HasForeignKey(x => x.IdPersonaReceptorFk);
+        
+        builder.Property(x => x.IdTipoMovimientoInventarioFk).HasColumnType("int");
         builder.HasOne(x => x.TipoMovimientoInventarios).WithMany(p => p.MovimientoInventarios).HasForeignKey(x => x.IdTipoMovimientoInventarioFk);
+        
+        builder.Property(x => x.IdFormaPagoFk).HasColumnType("int");
         builder.HasOne(x => x.FormaPagos).WithMany(p => p.MovimientoInventarios).HasForeignKey(x => x.IdFormaPagoFk);
     }
 }

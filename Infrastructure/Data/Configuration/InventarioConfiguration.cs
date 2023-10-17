@@ -27,7 +27,10 @@ public class InventarioConfiguration : IEntityTypeConfiguration<Inventario>
 
         builder.Property(x => x.StockMaximo).HasColumnType("int");
 
+        builder.Property(x => x.IdProductoFk).HasMaxLength(50);
         builder.HasOne(x => x.Productos).WithMany(p => p.Inventarios).HasForeignKey(x => x.IdProductoFk);
+
+        builder.Property(x => x.IdPresentacionFk).HasColumnType("int");
         builder.HasOne(x => x.Presentaciones).WithMany(p => p.Inventarios).HasForeignKey(x => x.IdPresentacionFk);
     }
 }

@@ -19,6 +19,7 @@ public class ProductoConfiguration : IEntityTypeConfiguration<Producto>
 
         builder.Property(x => x.NombreProducto).IsRequired().HasMaxLength(50);
 
+        builder.Property(x => x.IdMarcaFk).HasColumnType("int");
         builder.HasOne(x => x.Marcas).WithMany(m => m.Productos).HasForeignKey(x => x.IdMarcaFk);
     }
 }

@@ -16,6 +16,7 @@ public class CiudadConfiguration : IEntityTypeConfiguration<Ciudad>
 
         builder.Property(c => c.NombreCiudad).IsRequired().HasMaxLength(50);
 
+        builder.Property(x => x.IdDepartamentoFk).HasColumnType("int");
         builder.HasOne(c => c.Departamentos).WithMany(c => c.Ciudades).HasForeignKey(c => c.IdDepartamentoFk);
     }
 }

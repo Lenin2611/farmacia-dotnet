@@ -39,7 +39,10 @@ public class UbicacionPersonaConfiguration : IEntityTypeConfiguration<UbicacionP
 
         builder.Property(c => c.Complemento).IsRequired().HasMaxLength(50);
 
+        builder.Property(x => x.IdCiudadFk).HasColumnType("int");
         builder.HasOne(x => x.Ciudades).WithMany(x => x.UbicacionPersonas).HasForeignKey(x => x.IdCiudadFk);
+
+        builder.Property(x => x.IdPersonaFk).HasMaxLength(50);
         builder.HasOne(x => x.Personas).WithOne(x => x.UbicacionPersonas).HasForeignKey<UbicacionPersona>(x => x.IdPersonaFk);
     }
 }
