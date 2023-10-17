@@ -13,5 +13,5 @@ public class FacturaDto
     public int FacturaFinal { get; set; }
     public string NumeroResolucion { get; set; }
     public string IdPersonaFk { get; set; }
-    public string IdDetalleMovimientoInventarioFk { get; set; }
+    public int IdDetalleMovimientoInventarioFk { get; set; }
 }
