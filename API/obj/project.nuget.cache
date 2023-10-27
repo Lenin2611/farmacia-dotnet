@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eMinvF9EpVguMAPMDln2TuqaHJirjJLuJvizhRjd4kQFnP/cmSDzP9cTcaoEOHGhXQYQMu9dSwkaNxWAit7CTg==",
+  "dgSpecHash": "s6hVZeVMJftGA8JWvyxrNoqHJy4jnHwEbtCxVoi3A5EwUsODOY2gKTqsK8Q5u7oObXfxSFf2IlEzRIT4idU9Tw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenin\\.nuget\\packages\\aspnetcoreratelimit\\5.0.0\\aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "C:\\Users\\lenin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",

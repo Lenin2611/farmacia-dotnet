@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Core\\Core.csproj": {}
+    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Core\\Core.csproj": {
+    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\lenin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Core\\obj\\",
+        "outputPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenin\\AppData\\Roaming\\NuGet\\NuGet.Config"

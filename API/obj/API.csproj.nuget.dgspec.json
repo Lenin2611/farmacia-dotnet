@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\API\\API.csproj": {}
+    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\API\\API.csproj": {
+    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\API\\API.csproj",
+        "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\API\\API.csproj",
         "packagesPath": "C:\\Users\\lenin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\API\\obj\\",
+        "outputPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -27,8 +27,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -109,14 +109,14 @@
         }
       }
     },
-    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Core\\Core.csproj": {
+    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\lenin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Core\\obj\\",
+        "outputPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -162,14 +162,14 @@
         }
       }
     },
-    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\lenin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -184,8 +184,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Core\\Core.csproj"
+              "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Core\\Core.csproj"
               }
             }
           }

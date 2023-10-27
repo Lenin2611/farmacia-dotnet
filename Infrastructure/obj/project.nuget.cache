@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fa5Cg52+iYnuyX3qbZaqIM+W16KFNXSFmL1i8TnUMnOqLcHLrErbazrEyeCcPKnGYpap20sd1A3hh9SY0820Uw==",
+  "dgSpecHash": "6+LAEMxBAFI2WB8Im6y7VzrYhr9d6Ys3HKwgnCfr14ZURXDpZvehkRYd+s2WQ3GiyXa1jnV5+JdEOQlV4c6HSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmaciacampus\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\lenin\\OneDrive\\Documentos\\campus\\dotnet\\farmacia\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenin\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\lenin\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
